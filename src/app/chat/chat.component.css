@@ -1,0 +1,198 @@
+.searchText{
+  background-color: white ;
+}
+
+.ui-g-4 {
+  width: 86.3333%;
+}
+
+.displayOnlineList{
+  overflow-y: scroll;
+  margin-top:1vw;
+  height:38vw;
+}
+
+.upperBlock{
+  width: 35vw;
+  padding-top: 1vw;
+  margin-left: 33vw;
+}
+
+header{
+  padding: -1vw;
+  color: white;
+  background-color: #7A378B	;
+  clear: left;
+  height: 5vw;
+  text-align: center;
+}
+
+.Welcome{
+  margin-top: 1vw;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.span{
+  padding-top: 1vw;
+}
+
+.onlineUser{
+  background-color: gray;
+  height: 44vw;
+  width: 27.33%;
+}
+
+.displayOnlineUser{
+  color: gray;
+}
+
+.logOutButton{
+  float: right;
+  margin-right: 2vw;
+  margin-top: -2vw;
+}
+
+.button{
+  width: 4vw;
+  height: 2vw;
+}
+
+.ui-tabview-left>.ui-tabview-nav {
+  float: left;
+  width: 25%;
+  height: 63px;
+  background-image: none;
+  padding-top: 1px;
+  margin: 1vw;
+}
+
+.chatTitle{
+  font-size: 2vw;
+  text-align: center;
+}
+
+.history{
+  height: 5vw;
+  background-color:	#00C5CD;
+}
+
+.displayedChat{
+  height:35vw;;
+}
+
+.receiver{
+  float: right;
+}
+.messageEnter{
+  height: 3vw;
+  background-color:#00C5CD;
+}
+
+.inputText{
+  width: 34vw;
+}
+
+.receiever{
+  float: left;;
+  width: 30VW;
+  border: 1px solid #00C5CD;
+  border-radius: 2px;
+  HEIGHT: 4VW;
+  PADDING-TOP: 3VW;
+  /* TEXT-ALIGN: -webkit-center; */
+  margin-right: 6vw;
+  background-color: #00C5CD;
+}
+
+.sender{
+  float: right;
+  width: 30VW;
+  border: 1px solid #00C5CD;
+  border-radius: 2px;
+  HEIGHT: 4VW;
+  PADDING-TOP: 3VW;
+  /* TEXT-ALIGN: -webkit-center; */
+  background-color: white;
+}
+
+.chatSender{
+  float: right;
+}
+
+.chatReceiver{
+  float: left;
+
+}
+
+.titleOnlineUser{
+  font-size: 2vw;
+  color: red;
+}
+/*.main{
+width:100%;
+height:7vw;
+padding-top: 2vw;
+}
+
+.forLoop{
+font-family: serif;
+}
+
+.label{
+font-size: 17px;
+font-style: italic;
+color:red;
+}
+
+.logOutButton{
+text-align: center;
+}
+
+.onlineUsers{
+background-color: cornflowerblue;
+border: 1px solid black;
+float: left;
+width: 35vw;
+height: 15vw;
+}
+
+.chatWindow{
+background-color: gray;
+
+}
+
+.chatArea{
+float: right;
+}
+
+.displayChatHistory{
+margin-top: 16vw;
+}
+
+.inputArea{
+float: right;
+padding-top: 2vw;
+margin-top: 3vw;
+margin-right: 35vw;
+}
+
+.button{
+float: right;
+margin-right: -8vw;
+height: 2px;
+padding-top: 9vw;
+width: 4px;
+}
+
+.click{
+color:blue;
+}
+
+header{
+padding: 1vw;
+color: white;
+background-color: black;
+clear: left
+text-align: center;
+}*/

@@ -1,0 +1,23 @@
+
+.main{
+  width:100;
+}
+
+.body{
+  background-color:white;
+  width:20vw;
+  height:3vw;
+  border:1px solid gray;
+  border-radius:2px;
+  float:left;
+  color:black;
+}
+
+.userName{
+  float:right;
+}
+
+.chatMessage{
+  float:left;
+  margin-top:3vw;
+}

@@ -1,0 +1,126 @@
+
+<header>
+  <div class="upperBlock">
+    <span class="Welcome">Chat History Of <label style="color:red;">{{userName}}</label></span>
+  </div>
+  <div class="logOutButton">
+    <a [routerLink]="['/login']"><button pButton type="button" label="LogOut" (click)="logout()"></button></a>
+  </div>
+</header>
+
+<!-- For Online Users -->
+
+<div class="ui-g">
+  <div class="onlineUser">
+    <div class="ui-g-4">
+      <div class="span">
+        <span class="titleOnlineUser">Online Users</span>
+      </div>
+
+      <div class="searchText">
+        <input type="text" placeholder="search" pInputText [(ngModel)]="search"/><i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+
+      <div class="displayOnlineList">
+        <div *ngFor="let ou of onlineUsers">
+          <div *ngIf="ou.name!=userName">
+            <div (click)="getChatHistory(ou.name)">
+              <p-tabView orientation="left" >
+                <p-tabPanel header="{{ou.name}}" class="displayOnlineUser"></p-tabPanel>
+              </p-tabView>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- For Chat History -->
+
+
+
+  <div class="ui-g-8">
+    <div style="overflow-y:scroll;">
+      <div class="ui-g-12 history">
+        <div *ngFor="let ou of onlineUsers">
+          <div *ngIf="receiver==ou.name">
+            {{this.userName}}
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-g-12 displayedChat">
+        <div *ngFor="let chatData of chatHistory">
+          <div *ngIf="this.userName==chatData.sender">
+            <chat-sender [userName]="chatData.receiver" [chatMessage]="chatData.message"></chat-sender>
+            <!-- <div class="sender">{{chatData.message}}<div class="chatReceiver">{{chatData.receiver}}</div></div> -->
+          </div>
+          <div *ngIf="this.userName!=chatData.sender">
+            <div class="receiever"> {{chatData.message}}<div class="chatSender">{{chatData.receiver}}</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="ui-g-12 messageEnter">
+      <input type="text" class="inputText" placeholder="Type your message here" pInputText [(ngModel)]="message"/><i class="fa fa-paperclip" style="margin-left:2vw;" aria-hidden="true"></i>
+      <i class="fa fa-smile-o" style="margin-left:2vw;" aria-hidden="true"></i><span (click)="sendChat()"><i class="fa fa-paper-plane" style="margin-left:2vw;" aria-hidden="true"></i></span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="mainBlock">
+<div class="onlineUsers">
+<button type="button" pButton label="People Online" class="label" icon="fa-check" iconPos="left"></button>
+<div *ngFor="let ou of onlineUsers">
+<div *ngIf="ou.name!=userName">
+<div (click)="getChatHistory(ou.name)">
+Name : {{ou.name}}
+</div>
+</div>
+</div>
+<div *ngFor="let ou of onlineUsers">
+<div class="click" *ngIf="receiver==ou.name">
+Receiver : {{receiver}}
+</div>
+</div>
+</div>
+
+<div class="chatWindow">
+<div>
+<textarea class="inputArea"rows="2" cols="30" pInputTextarea autoResize="autoResize" [(ngModel)]="message"></textarea>
+</div>
+<div class="button">
+<button (click)="sendChat()">Send</button>
+</div>
+</div>
+</div>
+<div class="displayChatHistory">
+<h1 style="background-color:yellow;">Chat History</h1>
+<div style="color:black;" *ngFor="let chatData of chatHistory">
+{{chatData.sender}} to  {{chatData.receiver}} On  {{chatData.chatDate}} : {{chatData.message}}
+</div>
+</div> -->

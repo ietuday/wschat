@@ -1,0 +1,42 @@
+
+
+.loginLabel{
+  padding-top: 1vw;
+  text-align: center;
+  color: red;
+}
+
+.loginForm{
+  background-color:black;
+  color: white;
+  height: 5vw;
+}
+
+.input{
+  padding-bottom: 2vw;
+}
+
+.name{
+  padding-top: 2vw;
+  width: 39vw;
+  margin-left: 26vw;
+  text-align: center;
+}
+
+.login{
+  text-align: center;
+  margin-left: 38vw;
+  width: 10vw;
+}
+
+.textBox{
+  border-radius: 2px;
+}
+
+.loginButton{
+  color: black;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 2px;
+  margin-left: 8vw;
+}

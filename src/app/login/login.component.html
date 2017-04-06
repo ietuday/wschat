@@ -1,0 +1,22 @@
+<html>
+<!-- <header>
+	<title>LoginForm</title>
+</header> -->
+
+<body>
+	<div  class="loginForm">
+  <h1 class="loginLabel">Login Form</h1>
+	</div>
+<div class="name">
+	<div class="input">
+  <label style="font-family: serif;">User Name:
+  </label>
+  <input class="textBox" type="text" id="msg" placeholder="Enter Your Name:" [(ngModel)]="userName" required="required" />
+	</div>
+</div>
+
+<div class="login">
+	<a [routerLink]="['/chat']"><button class="loginButton" (click)="login()" >Login</button></a>
+	<!-- <button (click)="login()">Login</button> -->
+</div>
+</body>
